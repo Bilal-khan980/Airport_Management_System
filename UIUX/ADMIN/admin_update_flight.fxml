@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
+   <children>
+      <Label layoutX="270.0" layoutY="80.0" text="FLIGHT NO">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="120.0" text="ARRIVAL TIME">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="160.0" text="DEPARTURE TIME">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="200.0" text="ARRIVAL ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="240.0" text="DEPARTURE ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="280.0" text="PLANE ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="478.0" layoutY="116.0" text=":">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="478.0" layoutY="154.0" text=":">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="320.0" text="FARE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="flight_number_U" layoutX="386.0" layoutY="75.0" prefHeight="26.0" prefWidth="189.0" />
+      <TextField fx:id="arrival_airport_id_U" layoutX="386.0" layoutY="198.0" prefHeight="26.0" prefWidth="190.0" />
+      <TextField fx:id="departure_airport_id_U" layoutX="386.0" layoutY="238.0" prefHeight="26.0" prefWidth="190.0" />
+      <TextField fx:id="plane_id_u" layoutX="386.0" layoutY="278.0" prefHeight="26.0" prefWidth="190.0" />
+      <TextField fx:id="arrival_time_hours_U" layoutX="386.0" layoutY="118.0" prefHeight="26.0" prefWidth="83.0" />
+      <TextField fx:id="departure_time_hours_U" layoutX="386.0" layoutY="158.0" prefHeight="26.0" prefWidth="83.0" />
+      <TextField fx:id="arrival_time_minutes_U" layoutX="490.0" layoutY="118.0" prefHeight="26.0" prefWidth="83.0" />
+      <TextField fx:id="departure_time_minutes_U" layoutX="490.0" layoutY="158.0" prefHeight="26.0" prefWidth="83.0" />
+      <TextField fx:id="fare_U" layoutX="386.0" layoutY="318.0" prefHeight="26.0" prefWidth="190.0" />
+      <Button layoutX="445.0" layoutY="359.0" mnemonicParsing="false" onAction="#update_flight_details_button" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #E1CD71;" text="UPDATE" textFill="WHITE" />
+      <ImageView fitHeight="400.0" fitWidth="681.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@page.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="371.0" layoutY="24.0" text="UPDATE FLIGHT" textFill="#e1cd71">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="442.0" layoutY="51.0" startX="-135.20001220703125" startY="-1.1444091796875E-5" stroke="#607f9d" />
+      <Button layoutX="37.0" layoutY="346.0" mnemonicParsing="false" onAction="#gotoadminmenu" prefHeight="26.0" prefWidth="150.0" style="-fx-border-color: #E1CD71; -fx-background-color: BLACK;" text="HOME" textFill="#e1cd71">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

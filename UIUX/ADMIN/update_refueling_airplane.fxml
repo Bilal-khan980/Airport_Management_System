@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
+   <children>
+      <Label layoutX="278.0" layoutY="110.0" text="PLANE ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="add_plane_id_update" layoutX="398.0" layoutY="110.0" />
+      <Button layoutX="465.0" layoutY="223.0" mnemonicParsing="false" onAction="#update_plane_refueling_in_db" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #E1CD71;" text="UPDATE" textFill="WHITE" />
+      <TextField fx:id="add_plane_ref_up" layoutX="398.0" layoutY="167.0" />
+      <Label layoutX="278.0" layoutY="171.0" text="REFUELING">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="400.0" fitWidth="681.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@page.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="337.0" layoutY="36.0" text="UPDATE AIRPLANE" textFill="#e1cd71">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="436.0" layoutY="63.0" startX="-135.20001220703125" startY="-1.1444091796875E-5" stroke="#607f9d" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
+   <children>
+      <TableView fx:id="baggageTableView" layoutX="269.0" layoutY="117.0" prefHeight="254.0" prefWidth="296.0" style="-fx-background-color: #607F9D; -fx-border-color: #E1BC17;">
+        <columns>
+          <TableColumn fx:id="baggageTagColumn" prefWidth="100.0" text="Baggage Tag">
+            <cellValueFactory>
+              <PropertyValueFactory property="baggageTag" />
+            </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="weightColumn" prefWidth="100.0" text="Weight">
+            <cellValueFactory>
+              <PropertyValueFactory property="weight" />
+            </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="locationColumn" prefWidth="100.0" text="Location">
+            <cellValueFactory>
+              <PropertyValueFactory property="location" />
+            </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="statusColumn_baggage" prefWidth="100.0" text="Status">
+            <cellValueFactory>
+              <PropertyValueFactory property="status" />
+            </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+      <ImageView fitHeight="400.0" fitWidth="681.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@page.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="310.0" layoutY="52.0" text="ALL BOOKED BAGGAGES" textFill="#e1cd71">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="434.0" layoutY="79.0" startX="-135.20001220703125" startY="-1.1444091796875E-5" stroke="#607f9d" />
+      <Button layoutX="37.0" layoutY="346.0" mnemonicParsing="false" onAction="#gotocustomermenu" prefHeight="26.0" prefWidth="150.0" style="-fx-border-color: #E1CD71; -fx-background-color: BLACK;" text="HOME" textFill="#e1cd71">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

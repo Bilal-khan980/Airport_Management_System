@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
+   <children>
+      <TableView fx:id="flightTableView_customer" layoutX="271.0" layoutY="131.0" prefHeight="112.0" prefWidth="296.0" style="-fx-background-color: #607F9D; -fx-border-color: #E1BC17;">
+    <columns>
+        <TableColumn fx:id="flightNoColumn_customer" prefWidth="63.0" text="Flight No">
+            <cellValueFactory>
+                <PropertyValueFactory property="flightNo" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn fx:id="planeIdColumn_customer" prefWidth="63.0" text="Plane ID">
+            <cellValueFactory>
+                <PropertyValueFactory property="planeId" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn fx:id="arrivalTimeColumn_customer" prefWidth="104.0" text="Arrival Time">
+            <cellValueFactory>
+                <PropertyValueFactory property="arrivalTime" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn fx:id="departureTimeColumn_customer" prefWidth="104.0" text="Departure Time">
+            <cellValueFactory>
+                <PropertyValueFactory property="departureTime" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn fx:id="arrivalAirportColumn_customer" prefWidth="114.0" text="TO">
+            <cellValueFactory>
+                <PropertyValueFactory property="arrivalAirportID" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn fx:id="departureAirportColumn_customer" prefWidth="114.0" text="FROM">
+            <cellValueFactory>
+                <PropertyValueFactory property="departureAirportID" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn fx:id="availableSeatsColumn_customer" prefWidth="80.0" text="Available Seats">
+        <cellValueFactory>
+            <PropertyValueFactory property="available_seats" />
+        </cellValueFactory>
+    </TableColumn>
+    <TableColumn fx:id="fareColumn_customer" prefWidth="80.0" text="Fare">
+        <cellValueFactory>
+            <PropertyValueFactory property="fare" />
+        </cellValueFactory>
+    </TableColumn>
+    </columns>
+</TableView>
+      <Label layoutX="312.0" layoutY="267.0" text="SEATS">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="312.0" layoutY="313.0" text="FLIGHT ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="booked_seats_booking" layoutX="377.0" layoutY="263.0" />
+      <TextField fx:id="flight_id_booking" layoutX="377.0" layoutY="309.0" />
+      <Button layoutX="410.0" layoutY="352.0" mnemonicParsing="false" onAction="#add_booking_in_db_customer" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #E1CD71;" text="BOOK" textFill="WHITE" />
+      <ImageView fitHeight="400.0" fitWidth="681.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@page.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="353.0" layoutY="53.0" text="BOOK FLIGHT" textFill="#e1cd71">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="434.0" layoutY="80.0" startX="-135.20001220703125" startY="-1.1444091796875E-5" stroke="#607f9d" />
+      <Button layoutX="37.0" layoutY="346.0" mnemonicParsing="false" onAction="#gotocustomermenu" prefHeight="26.0" prefWidth="150.0" style="-fx-border-color: #E1CD71; -fx-background-color: BLACK;" text="HOME" textFill="#e1cd71">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+
+</AnchorPane>
